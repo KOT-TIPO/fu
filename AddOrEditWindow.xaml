@@ -1,0 +1,55 @@
+﻿<Window x:Class="Yagnov.AddOrEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Yagnov"
+        mc:Ignorable="d"
+        Title="AddOrEditWindow" Height="450" Width="300">
+    <Grid Margin="0,6,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64*"></RowDefinition>
+            <RowDefinition Height="156*"></RowDefinition>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="190*"></RowDefinition>
+            <RowDefinition Height="24*"></RowDefinition>
+            <RowDefinition Height="122*"></RowDefinition>
+            <RowDefinition Height="29*"></RowDefinition>
+            <RowDefinition Height="175*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="48*"></ColumnDefinition>
+            <ColumnDefinition Width="98*"></ColumnDefinition>
+            <ColumnDefinition Width="43*"></ColumnDefinition>
+
+
+
+        </Grid.ColumnDefinitions>
+        <Button Content="AddProductButton" HorizontalAlignment="Left" Height="42" Margin="75,22,0,0" Grid.Row="7" VerticalAlignment="Top" Width="154" Click="Button_Click_1" Grid.ColumnSpan="2" />
+        <TextBox x:Name="NameTextBox" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="5" TextWrapping="Wrap" Text="Pecription" VerticalAlignment="Center" Width="128" Height="47" Margin="10,0,0,0"/>
+        <TextBox x:Name="PriceTextBox" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" Text="price" VerticalAlignment="Top" Width="140" Height="54" RenderTransformOrigin="-0.115,0.531" Margin="1,24,0,0">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1" ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180.623"/>
+                    <TranslateTransform X="-0.011" Y="-1.599"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="DescriptionTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="7,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="ProductName" VerticalAlignment="Center" Width="135" Height="52" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.982"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.557"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+
+
+
+    </Grid>
+</Window>
